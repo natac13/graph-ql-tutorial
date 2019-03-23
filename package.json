@@ -6,7 +6,7 @@
   "scripts": {
     "client": "cross-env NODE_ENV=development nodemon --exec \"webpack-dev-server --config ./webpack/webpack.config.js --env development\"",
     "start": "concurrently \"npm run client\" \"npm run server\"",
-    "server": "nodemon -L -r @babel/register -r @babel/polyfill server/index.js",
+    "server": "cross-env NODE_ENV=development nodemon -L -r @babel/register -r @babel/polyfill server/index.js",
     "lint": "eslint ./app",
     "test": "jest -i --verbose --coverage",
     "build": "npm run client:build",
