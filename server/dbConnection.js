@@ -11,8 +11,8 @@ async function connectToDB(env, mongoURI) {
         pass: process.env.DB_PASS,
         useNewUrlParser: true,
       });
-      console.log(chalk.green('\nConnected to the development Database'));
-      console.log(chalk.yellow('Good Luck!'));
+      console.log(chalk.cyan('\nConnected to the development Database'));
+      console.log(chalk.red('-----------------------------------------------'));
       return connection;
     } catch (error) {
       console.log(chalk.red(error));

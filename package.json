@@ -109,6 +109,7 @@
     "graphql": "14.1.1",
     "is-empty": "1.2.0",
     "lodash": "4.17.11",
+    "mongoose": "5.4.19",
     "morgan": "1.9.1",
     "prop-types": "15.7.2",
     "ramda": "0.26.1",

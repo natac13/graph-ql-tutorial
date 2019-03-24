@@ -16,7 +16,7 @@ import schema from './schema/schema';
 // import routes from './routes';
 
 /** Database Connection */
-// import connectToDB from './dbConnection';
+import connectToDB from './dbConnection';
 
 require('dotenv').config();
 
@@ -24,7 +24,7 @@ const env = process.env.NODE_ENV;
 const port = process.env.SERVER_PORT || 8080;
 
 // connect to DB
-// connectToDB(env, process.env.MONGO_URI);
+connectToDB(env, process.env.MONGO_URI);
 
 /* Express server */
 const app = express();
